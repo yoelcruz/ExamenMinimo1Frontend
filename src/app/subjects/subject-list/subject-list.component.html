@@ -1,0 +1,21 @@
+
+<table class="table">
+        <thead class="thead-dark">    
+        <tr>
+            <th>Name</th>
+            <th>Students</th>
+        </tr>
+    </thead>
+    <tbody> 
+        <tr *ngFor="let subject of subjects">
+            <th>{{subject.name}}</th>
+            <th>{{subject.students}}</th>
+            <!-- <th> 
+                <div *ngFor="let subject of subject.students">
+                    {{ subject.students[0] }}                
+                </div> 
+            </th> -->
+        </tr>
+    </tbody>
+
+</table>

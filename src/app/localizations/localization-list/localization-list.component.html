@@ -1,0 +1,70 @@
+<table class="table">
+    <thead class="thead-dark">    
+    <tr>
+        <th>Name</th>
+        <th>Estado</th>
+        <th>DensidadPoblacional</th>
+        <th>Latitud</th>
+        <th>Longitud</th>
+    </tr>
+</thead>
+<tbody> 
+    <tr *ngFor="let localization of localizations">
+        <th>{{localization.name}}</th>
+        <th>{{localization.estado}}</th>
+        <th>{{localization.densidadPoblacional}}</th>
+        <th>{{localization.latitud}}</th>
+        <th>{{localization.longitud}}</th>
+    </tr>
+</tbody>
+
+<!-- <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)" class="col-lg-12">
+
+		<p>
+			<label>Nombre</label>
+			<input type="text" name="name" #name="ngModel" [(ngModel)]="localization.name" class="
+			form-control" required />
+			<span *ngIf="!name.valid && name.touched">
+				El nombre es obligatorio!!
+			</span>
+		</p> -->
+
+	<!-- 	<p>
+			<label>Estado</label>
+			<input type="text" name="estado" #surname="ngModel" [(ngModel)]="localization.estado" class="
+			form-control" required />
+			<span *ngIf="!estado.valid && estado.touched">
+				Los apellidos son obligatorios!!
+			</span>
+		</p>
+
+		<p>
+			<label>Densidad poblacional</label>
+			<input type="text" name="densidadPoblacional" #nick="ngModel" [(ngModel)]="localization.densidadPoblacional" class="
+			form-control" required />>
+        </p>
+        
+        <p>
+			<label>latitud</label>
+			<input type="text" name="latitud" #name="ngModel" [(ngModel)]="localization.latitud" class="
+			form-control" required />
+			<span *ngIf="!latitud.valid && latitud.touched">
+				La latitud es obligatorio!!
+			</span>
+        </p> -->
+        <!-- <p>
+			<label>longitud</label>
+			<input type="text" name="longitud" #name="ngModel" [(ngModel)]="localization.longitud" class="
+			form-control" required />
+			<span *ngIf="!longitud.valid && longitud.touched">
+				La longitud es obligatoria!!
+			</span>
+		</p> --> -->
+
+		
+ 
+	<!-- 	<input type="submit" value="Añadir usuario" class="btn btn-success" [disabled]="
+		!registerForm.form.valid" />
+	</form> --> -->
+
+</table>
